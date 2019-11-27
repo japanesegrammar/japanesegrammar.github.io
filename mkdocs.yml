@@ -1,0 +1,16 @@
+site_name: My Docs
+theme:
+  name: 'material'
+  palette:
+    primary: 'red'
+    accent: 'white'
+
+extra_css:
+  - 'stylesheets/extra.css'
+
+nav:
+- Home: 'index.md'
+- んです:
+    - '~んですか': 'んです/~んですか.md'
+    - '~んです': 'んです/んです.md'
+
