@@ -10,7 +10,7 @@ extra_css:
 
 nav:
 - Home: 'index.md'
-- 'V て-form + いただけませんか' : 'V て-form + いただけませんか.md'
+- 'V て-form + いただけませんか' : 'v_te-form_+_itadakemasenka.md'
 - んです:
     - '~んですか': 'ndesu/~ndesuka.md'
     - '~んです': 'ndesu/~ndesu.md'
