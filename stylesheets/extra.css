@@ -1,0 +1,29 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    text-align: left;
+  }
+  
+
+  mark.light_pink {
+    color:black;
+    background-color: #F8BBD0;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: .0em 0 0 orange,-.0em 0 0 orange
+}
+
+mark.light_green {
+    color:black;
+    background-color: rgb(187, 248, 205);
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: .0em 0 0 orange,-.0em 0 0 orange
+}
