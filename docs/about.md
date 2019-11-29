@@ -1,0 +1,1 @@
+This website is created for educational purposes only. The main idea is that learning Japanese grammar should be enjoyable and fun by presenting examples with a new layout and design instead of a textbook-style. These grammar examples and sentences are used from Minna no Nihongo book and from all over the internet. 
