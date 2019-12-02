@@ -1,8 +1,12 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 ### Usage Form
 
-|| | |
-|-|-|-|
-|<mark class="light_green">V て-form</mark> __+__ <mark class="light_pink">いただけませんか</mark>|
+<div class="card border-dark mb-20 bg-light text-dark"  style="max-width: 30rem;">
+    <div class="mx-auto w-50 p-3  text-center">
+        <span><mark class="light_green">V て-form</mark> + <mark class="light_pink">いただけませんか</mark></span>
+    </div>
+</div>
 
 ### Explanation 
 
