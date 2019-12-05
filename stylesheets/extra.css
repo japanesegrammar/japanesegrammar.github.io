@@ -27,3 +27,12 @@ mark.light_green {
     border-radius: 0;
     box-shadow: .0em 0 0 orange,-.0em 0 0 orange
 }
+
+div.card
+{
+text-align: center;
+padding: 10px;
+border: 1px solid #000;
+border-radius: 5px;
+-moz-border-radius: 15px;
+}
