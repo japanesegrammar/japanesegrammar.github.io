@@ -11,26 +11,31 @@ with open('v_te-form_iru.md', 'w') as f:
 
     f.write((printTitle('To describe continuous states')))
     writeNewLine(f)
+
     f.write('You can describe what kind of action is in progress by using the helping verb `ている`.')
     l1 = TextPair('スーさんは 今勉強 しています。', 'Sue is studying now.', [HighlightText('して', Color.LIGHT_GREEN), HighlightText('います', Color.LIGHT_PINK)], addBullet=True)
     f.write(generate([l1]))
     writeNewLine(f)
+    writeNewLine(f)
+    f.write('You could also add `まだ` to show that the state is on going.')
+    l1 = TextPair('まだ 雨が 降っています。', 'It is still raining.', [HighlightText('まだ', Color.LIGHT_INDIGO), HighlightText('降って', Color.LIGHT_GREEN), HighlightText('います', Color.LIGHT_PINK)], addBullet=True)
+    f.write(generate([l1]))
 
     f.write((printTitle('To describe habitual actions')))
     f.write('\n')
-    f.write('You can also use `ている` to describe habitual actions.')
-    l1 = TextPair('毎朝 ジョギングを しています。', 'I jog every morning.', [HighlightText('して', Color.LIGHT_GREEN), HighlightText('います', Color.LIGHT_PINK)], addBullet=True)
+    morning = getHtmlString('毎朝')
+    f.write('You can also use `ている` to describe habitual actions.' + f'There is a time indicator such as {morning} to show when actions are occurring regularly.')
+    l1 = TextPair('毎朝 ジョギングを しています。', 'I jog every morning.', [HighlightText('毎朝', Color.LIGHT_INDIGO), HighlightText('して', Color.LIGHT_GREEN), HighlightText('います', Color.LIGHT_PINK)], addBullet=True)
     f.write(generate([l1]))
     writeNewLine(f)
     f.write('\n')
-    morning = getHtmlString('毎朝')
-    f.write(getInfoBlock(f'There is a time indicator such as {morning} to show when actions are occurring regularly.'))
+
     f.write((printTitle('To describe occupation')))
     f.write('You can describe what a person does by occupation.')
     l1 = TextPair('私は 英語を 教えています。', 'I teach English.', [HighlightText('教えて', Color.LIGHT_GREEN), HighlightText('います', Color.LIGHT_PINK)], addBullet=True)
     f.write(generate([l1]))
     writeNewLine(f)
-    f.write(getInfoBlock('This sentence has two meanings; You are teaching English right now OR You are an English-language teacher. Just like in English language `I am teaching English` which can be interpreted in two ways.'))
+    f.write(getInfoBlock('This sentence has two meanings; You are teaching English right now OR You are an English teacher. Just like in English language `I am teaching English` which can be interpreted in two ways.'))
     writeNewLine(f)
     f.write((printTitle('To describe change in state')))
     writeNewLine(f)
@@ -46,6 +51,6 @@ with open('v_te-form_iru.md', 'w') as f:
     f.write(getInfoBlock('Previously Tom is single. But now he is no longer single. Note that it does not mean `Tom is getting married`.'))
 
     # to generate vocab
-    vocabListInThisPage = ['今', '勉強', '毎朝', 'ジョギング', '私', '英語', '教える', '太る', '結婚']
+    vocabListInThisPage = ['今', '勉強', '毎朝', 'ジョギング', '私', '英語', '教える', '太る', '結婚', '雨', '降る']
     vocabLines = generateVocabLines(vocabListInThisPage)
     f.write(vocabLines)
