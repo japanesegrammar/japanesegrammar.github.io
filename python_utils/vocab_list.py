@@ -37,6 +37,8 @@ _KNOWN_VOCAB_LIST = [Vocab('勉強', 'study'),
                      Vocab('太る', 'to put on weight; to gain weight'),
                      Vocab('結婚', 'marriage​'),
                      Vocab('先生 ', 'teacher'),
+                     Vocab('雨', 'rain'),
+                     Vocab('降る', 'to fall (of rain, snow, ash, etc.)'),
                      ]
 
 
