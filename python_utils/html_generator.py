@@ -25,7 +25,9 @@ def _removeCommonHiraganaIfExist(kanji: str, hiragana: str) -> Tuple[str, str, s
     charList = list(set(kanji).intersection(hiragana))
     reminderHiragana = ''.join(charList)
     if len(charList) > 0:
-        return ''.join(list(set(kanji) - set(hiragana))), ''.join(list(set(hiragana) - set(kanji))), reminderHiragana
+        modifiedKanji = ''.join(list(set(kanji) - set(hiragana)))
+        replacedHiragana = hiragana[:-len(charList)]    # assume that hiragana words are behind kanji
+        return modifiedKanji, ''.join(replacedHiragana), reminderHiragana
     else:
         return kanji, hiragana, reminderHiragana
 
