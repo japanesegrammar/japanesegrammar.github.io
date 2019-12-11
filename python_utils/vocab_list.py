@@ -19,14 +19,6 @@ class Vocab:
         return '<li>' + vocab + '  ⇌  ' + self.meaning + '</li>'
 
 
-# print('###Vocabulary')
-# print('<ol>')
-# print(generateVocab('先生 ', 'teacher'))
-# print(generateVocab('紹介', 'introduction'))
-# print(generateVocab('写真', 'photo; picture'))
-# print(generateVocab('撮る', 'to take (a photo)'))
-# print('</ol>')
-
 _KNOWN_VOCAB_LIST = [Vocab('勉強', 'study'),
                      Vocab('今', 'now; the present time'),
                      Vocab('毎朝 ', 'every morning​'),
@@ -39,6 +31,18 @@ _KNOWN_VOCAB_LIST = [Vocab('勉強', 'study'),
                      Vocab('先生 ', 'teacher'),
                      Vocab('雨', 'rain'),
                      Vocab('降る', 'to fall (of rain, snow, ash, etc.)'),
+                     Vocab('旅行', 'travel; trip'),
+                     Vocab('切符', 'ticket​'),
+                     Vocab('買う', 'buy; purchase'),
+                     Vocab('来週', 'next week​'),
+                     Vocab('レポート', 'report', isItKanji=False),
+                     Vocab('書く', 'to write; to compose'),
+                     Vocab('使う', 'to use (a thing, method, etc.); to make use of'),
+                     Vocab('元', 'origin; source'),
+                     Vocab('場所', 'place; location'),
+                     Vocab('戻す', 'to put back'),
+                     Vocab('彼', 'he; him'),
+                     Vocab('部屋', 'room'),
                      ]
 
 
