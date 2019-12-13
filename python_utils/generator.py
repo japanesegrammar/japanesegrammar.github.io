@@ -10,10 +10,10 @@ def printTitle(text: str):
     return f'\n## {text} \n'
 
 
-def generateCard(text: str, pairs: List[Tuple[str, str]]):
+def generateCard(text: str, pairs: List[Tuple[str, str]], useLeft: bool = False):
     '<div class="card">   <span><mark class="light_green">V て-form</mark> + <mark class="light_pink">いただけませんか</mark></span></div>'
 
-    t1 = '<div class="card">'
+    t1 = '<div class="card_left">' if useLeft else '<div class="card">'
     newText = text
     for p in pairs:
         newText = newText.replace(p[1], f'<mark class="{p[0]}">{p[1]}</mark>')
