@@ -1,9 +1,8 @@
-from python_utils.generator import printTitle, generateCard, writeNewLine, generate, getInfoBlock
+from python_utils.generator import printTitle, generateCard, writeNewLine, generate
 from python_utils.html_generator import getHtmlString
-from python_utils.model import TextPair, HighlightText, Color, ForceReplace
-from python_utils.vocab_list import generateVocabLines
+from python_utils.model import TextPair, HighlightText, Color
 
-with open('volitional_form.md', 'w') as f:
+with open('volitional_form.md', 'w', encoding="utf-8") as f:
     f.write(printTitle('Volitional Form Conjugation Rules'))
 
     cardText = '<b>Rule 1:</b> For u-verbs: Replace the u-vowel sound with the お equivalent and attach う' + '\n' + '\n' + \
@@ -14,10 +13,14 @@ with open('volitional_form.md', 'w') as f:
 
     f.write((printTitle('Rule 1')))
     writeNewLine(f)
-
     f.write('For u-verbs: Replace the u-vowel sound with the お equivalent and attach う')
-    f.write('\n')
-    f.write('\n')
+
+    # we need to add this dummy. otherwise, there is brake line between explanation and example sentence
+    l1 = TextPair('', '', [],)
+    f.write(generate([l1]))
+
+    f.write('<b>Example A</b>')
+    f.write('<br>')
     oyogu = getHtmlString('泳ぐ')
     oyogo = getHtmlString('泳ご')
     oyogou = getHtmlString('泳ごう')
@@ -27,11 +30,13 @@ with open('volitional_form.md', 'w') as f:
     f.write(generate([l1]))
     writeNewLine(f)
 
+    f.write('<b>Example B</b>')
+    f.write('<br>')
     matsu = getHtmlString('待つ')
     mato = getHtmlString('待と')
     matou = getHtmlString('待とう')
     f.write(f'{matsu} ---`[replace u-vowel with the お equivalent]`--> {mato} ---`[attach う]`---> {matou}')
-
+    f.write('<br>')
     l1 = TextPair('雨が やむまで 待とう。', "Let's wait until the rain stops.", [HighlightText('待とう', Color.LIGHT_GREEN)], addBullet=True)
     f.write(generate([l1]))
     writeNewLine(f)

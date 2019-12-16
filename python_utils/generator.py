@@ -34,7 +34,6 @@ def generateItem(pair: TextPair):
     furigana = getHtmlString(newJapaneseText, pair.forceReplaceList)
     if len(pair.highlightText) == 0:
         newFurigana = furigana
-        # print('here')
     else:
         for t in pair.highlightText:
             if not isAllHiragana(t.text):
