@@ -3,8 +3,8 @@ from typing import List
 
 from functional import seq
 
-from python_utils.generator import generateVocab
 from python_utils.html_generator import getHtmlString
+from python_utils.model import ForceReplace
 
 
 @dataclass
@@ -12,10 +12,14 @@ class Vocab:
     kanjiOrOther: str
     meaning: str
     isItKanji: bool = True
+    forceWord: ForceReplace = None
 
     @property
     def getHtmlString(self):
-        vocab = getHtmlString(self.kanjiOrOther) if self.isItKanji else self.kanjiOrOther
+        if self.forceWord is not None:
+            vocab = getHtmlString(self.kanjiOrOther, forceReplaceList=[self.forceWord]) if self.isItKanji else self.kanjiOrOther
+        else:
+            vocab = getHtmlString(self.kanjiOrOther) if self.isItKanji else self.kanjiOrOther
         return '<li>' + vocab + '  ⇌  ' + self.meaning + '</li>'
 
 
@@ -43,11 +47,29 @@ _KNOWN_VOCAB_LIST = [Vocab('勉強', 'study'),
                      Vocab('戻す', 'to put back'),
                      Vocab('彼', 'he; him'),
                      Vocab('部屋', 'room'),
+                     Vocab('夏', 'summer'),
+                     Vocab('川', 'river, stream'),
+                     Vocab('泳ぐ', 'to swim'),
+                     Vocab('待つ', 'to wait'),
+                     Vocab('ご飯', 'cooked rice; meal', forceWord=ForceReplace('飯', 'はん')),
+                     Vocab('食べる', 'to eat'),
+                     Vocab('今夜', 'this evening; tonight'),
+                     Vocab('早く', 'early; soon; quickly; swiftly'),
+                     Vocab('寝る', 'to sleep, to lie down'),
+                     Vocab('一緒に', 'together'),
+                     Vocab('卒業', 'graduation; completion (e.g. of a course)​'),
+                     Vocab('年後', 'years later'),
+                     Vocab('来る', 'to come back; to become'),
                      ]
 
 
 def generateVocabLines(vocabList: List[str]) -> str:
-    filteredList = seq(_KNOWN_VOCAB_LIST).filter(lambda x: x.kanjiOrOther in vocabList)
+    for v in vocabList:
+        if v not in seq(_KNOWN_VOCAB_LIST).map(lambda x: x.kanjiOrOther).to_list():
+            assert False, f'This vocab is {v} in the list yet.'
+
+    filteredList = seq(_KNOWN_VOCAB_LIST).filter(lambda x: x.kanjiOrOther in vocabList).to_list()
+    assert len(filteredList) == len(vocabList)
     l1 = f'\n##Vocabulary\n'
     l2 = f'<ol>'
     v = seq(filteredList).map(lambda x: x.getHtmlString).to_list()
