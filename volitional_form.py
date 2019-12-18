@@ -83,7 +83,7 @@ with open('volitional_form.md', 'w', encoding="utf-8") as f:
     f.write('<br>')
     matsu = getHtmlString(' 卒業する')
     mato = getHtmlString('卒業しよう')
-    f.write(f'{matsu} ---`[replace る with よう]`--> {mato}')
+    f.write(f'{matsu} ---`[replace する with しよう]`--> {mato}')
     f.write('<br>')
     l1 = TextPair('一緒に卒業しようね。', "Let's graduate together.", [HighlightText('卒業しよう', Color.LIGHT_GREEN)], addBullet=True)
     f.write(generate([l1]))
