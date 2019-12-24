@@ -60,6 +60,14 @@ _KNOWN_VOCAB_LIST = [Vocab('勉強', 'study'),
                      Vocab('卒業', 'graduation; completion (e.g. of a course)​'),
                      Vocab('年後', 'years later'),
                      Vocab('来る', 'to come back; to become'),
+                     Vocab('手伝う', 'to help; to assist'),
+                     Vocab('友だち', 'friend'),
+                     Vocab('言う', 'to say; to utter'),
+                     Vocab('映画', 'movie; film'),
+                     Vocab('見る', 'to see; to look'),
+                     Vocab('園庭', 'garden'),
+                     Vocab('散歩', 'walk; stroll'),
+                     Vocab('試食', 'food sampling'),
                      ]
 
 

@@ -1,3 +1,4 @@
+import collections
 import re
 from typing import Tuple, List, Optional
 
@@ -20,15 +21,18 @@ def _getFromPair(pair):
     return x
 
 
-def _removeCommonHiraganaIfExist(kanji: str, hiragana: str) -> Tuple[str, str, str]:
-    charList = list(set(kanji).intersection(hiragana))
+def _removeCommonHiraganaIfExist(japaneseText: str, hiragana: str) -> Tuple[str, str, str]:
+    charList = list(set(japaneseText).intersection(hiragana))
     reminderHiragana = ''.join(charList)
     if len(charList) > 0:
-        modifiedKanji = ''.join(list(set(kanji) - set(hiragana)))
+        a = collections.OrderedDict.fromkeys(japaneseText)
+        b = collections.OrderedDict.fromkeys(hiragana)
+        kanjiOnlyList = seq(collections.OrderedDict.fromkeys(x for x in a if x not in b)).map(lambda x: x[0]).to_list()
+        kanjiOnly = ''.join(kanjiOnlyList)
         replacedHiragana = hiragana[:-len(charList)]  # assume that hiragana words are behind kanji
-        return modifiedKanji, ''.join(replacedHiragana), reminderHiragana
+        return kanjiOnly, ''.join(replacedHiragana), reminderHiragana
     else:
-        return kanji, hiragana, reminderHiragana
+        return japaneseText, hiragana, reminderHiragana
 
 
 def isAllHiragana(text: str):
