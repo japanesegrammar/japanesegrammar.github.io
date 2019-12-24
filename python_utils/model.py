@@ -19,6 +19,7 @@ class ForceReplace:
 class HighlightText:
     text: str
     color: Color
+    replaceAt: Optional[int] = None
 
 
 @dataclass
@@ -29,3 +30,22 @@ class TextPair:
     addBreak: bool = False
     addBullet: bool = False
     forceReplaceList: Optional[List[ForceReplace]] = None
+
+@dataclass
+class FuriganaGridItem:
+    japaneseText: str
+    kanjiTextList: List[str]
+    englishText: str
+    highlightText: Optional[List[HighlightText]] = field(default_factory=lambda: [])
+    addBreak: bool = False
+    addBullet: bool = False
+
+@dataclass
+class FuriganaPair:
+    kanji: str
+    hiragana: str
+
+@dataclass
+class NewTextPair:
+    japaneseText: str
+    kanjiList: List[str]

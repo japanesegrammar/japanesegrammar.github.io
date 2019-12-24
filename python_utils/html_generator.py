@@ -1,9 +1,8 @@
 import re
 from typing import Tuple, List, Optional
 
-from functional import seq
-
 import pykakasi
+from functional import seq
 
 from python_utils.model import ForceReplace
 
@@ -26,7 +25,7 @@ def _removeCommonHiraganaIfExist(kanji: str, hiragana: str) -> Tuple[str, str, s
     reminderHiragana = ''.join(charList)
     if len(charList) > 0:
         modifiedKanji = ''.join(list(set(kanji) - set(hiragana)))
-        replacedHiragana = hiragana[:-len(charList)]    # assume that hiragana words are behind kanji
+        replacedHiragana = hiragana[:-len(charList)]  # assume that hiragana words are behind kanji
         return modifiedKanji, ''.join(replacedHiragana), reminderHiragana
     else:
         return kanji, hiragana, reminderHiragana
@@ -37,6 +36,11 @@ def isAllHiragana(text: str):
     kakasi.setMode("J", "H")
     result = kakasi.getConverter().do(text)
     return result == text
+
+
+def generateFuriganaHtml(t: str) -> str:
+    line = ' '.join(t).replace(' ', '').replace('-', ' ')
+    return re.sub(r'\[(.*?)\]\{(.*?)\}', r'<ruby>\1<rp>（</rp><rt>\2</rt><rp>）</rp></ruby>', line)
 
 
 def getHtmlString(text: str, forceReplaceList: Optional[List[ForceReplace]] = None):
