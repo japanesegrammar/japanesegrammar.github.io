@@ -87,6 +87,8 @@ _KNOWN_VOCAB_LIST = [Vocab('勉強', 'study'),
                      Vocab('一番', 'best; most; number one'),
                      Vocab('有名', 'famous'),
                      Vocab('楽しい', 'enjoyable; fun'),
+                     Vocab('薬', 'medicine'),
+                     Vocab('飲む', 'to drink'),
                      ]
 
 
