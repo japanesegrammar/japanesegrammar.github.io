@@ -68,6 +68,14 @@ _KNOWN_VOCAB_LIST = [Vocab('勉強', 'study'),
                      Vocab('園庭', 'garden'),
                      Vocab('散歩', 'walk; stroll'),
                      Vocab('試食', 'food sampling'),
+                     Vocab('週末', 'weekend'),
+                     Vocab('海', 'sea; ocean'),
+                     Vocab('行く', 'to go; to move'),
+                     Vocab('思う', 'to think; to consider'),
+                     Vocab('今から', 'from now; from this time forward'),
+                     Vocab('銀行', 'bank'),
+                     Vocab('外国', 'foreign country'),
+                     Vocab('働く', 'to work'),
                      ]
 
 

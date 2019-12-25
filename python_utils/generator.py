@@ -85,7 +85,7 @@ def printBreakLine():
 
 
 def writeNewLine(f):
-    f.write('\n')
+    f.write('<br>')
 
 
 def getInfoBlock(info: str) -> str:
