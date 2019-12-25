@@ -76,6 +76,17 @@ _KNOWN_VOCAB_LIST = [Vocab('勉強', 'study'),
                      Vocab('銀行', 'bank'),
                      Vocab('外国', 'foreign country'),
                      Vocab('働く', 'to work'),
+                     Vocab('約束', 'arrangement; appointment'),
+                     Vocab('時間', 'time​; period'),
+                     Vocab('間に', 'while; during'),
+                     Vocab('合う', 'to meet'),
+                     Vocab('時期', 'time; season; period'),
+                     Vocab('少し', 'small quantity; little; few'),
+                     Vocab('安い', 'cheap; calm; peaceful; quiet'),
+                     Vocab('画家', 'painter; artist'),
+                     Vocab('一番', 'best; most; number one'),
+                     Vocab('有名', 'famous'),
+                     Vocab('楽しい', 'enjoyable; fun'),
                      ]
 
 

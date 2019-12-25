@@ -1,0 +1,15 @@
+
+## Usage Form 
+<div class="card_left"><b>V plain form</b> + かも しれません
+
+<b>い-adj plain form</b> + かも しれません
+
+<b>な-adj plain form</b> + かも しれません
+
+<b>N</b> + かも しれません</div>
+## Explanation 
+You can use this to express the speaker's inference, and means that there is a possibility that some event or state occurred/occurs/will occur.
+## Examples 
+<b>Example A :</b> V plain form + かも しれません<br><div class="grid-container"><div class="grid-item"> <li> <ruby>約束<rp>（</rp><rt>やくそく</rt><rp>）</rp></ruby>の <ruby>時間<rp>（</rp><rt>じかん</rt><rp>）</rp></ruby>に <ruby>間<rp>（</rp><rt>ま</rt><rp>）</rp></ruby>に <mark class="light_green"><ruby>合<rp>（</rp><rt>あ</rt><rp>）</rp></ruby>わない</mark><mark class="light_pink">かもしれません</mark>。 </li> </div><div class="grid-item"> We might not be in time for the appointment. </div></div><br><b>Example B : </b> い-adj plain form + かも しれません<br><div class="grid-container"><div class="grid-item"> <li> <ruby>時期<rp>（</rp><rt>じき</rt><rp>）</rp></ruby>によっては<ruby>少<rp>（</rp><rt>すこ</rt><rp>）</rp></ruby>し<mark class="light_green"><ruby>安<rp>（</rp><rt>やす</rt><rp>）</rp></ruby>い</mark><mark class="light_pink">かもしれません</mark>。 </li> </div><div class="grid-item"> May be a little cheaper depending on the season. </div></div><br><b>Example C : </b> な-adj plain form</b> + かも しれません<br><div class="grid-container"><div class="grid-item"> <li> この <ruby>画家<rp>（</rp><rt>がか</rt><rp>）</rp></ruby>は <ruby>一番<rp>（</rp><rt>いちばん</rt><rp>）</rp></ruby> <mark class="light_green"><ruby>有名<rp>（</rp><rt>ゆうめい</rt><rp>）</rp></ruby></mark><mark class="light_pink">かもしれません</mark>。 </li> </div><div class="grid-item"> This painter may be the most famous. </div></div><br><b>Example D : </b> N + かも しれません<br><div class="grid-container"><div class="grid-item"> <li> <ruby>一番楽<rp>（</rp><rt>いちばんらく</rt><rp>）</rp></ruby>しい<mark class="light_green"><ruby>時間<rp>（</rp><rt>じかん</rt><rp>）</rp></ruby></mark><mark class="light_pink">かもしれません</mark>。 </li> </div><div class="grid-item"> It may be the most fun time. </div></div><br>
+##Vocabulary
+<ol><li><ruby>約束<rp>（</rp><rt>やくそく</rt><rp>）</rp></ruby>  ⇌  arrangement; appointment</li><li><ruby>時間<rp>（</rp><rt>じかん</rt><rp>）</rp></ruby>  ⇌  time​; period</li><li><ruby>間<rp>（</rp><rt>ま</rt><rp>）</rp></ruby>に  ⇌  while; during</li><li><ruby>合<rp>（</rp><rt>あ</rt><rp>）</rp></ruby>う  ⇌  to meet</li><li><ruby>時期<rp>（</rp><rt>じき</rt><rp>）</rp></ruby>  ⇌  time; season; period</li><li><ruby>少<rp>（</rp><rt>すこ</rt><rp>）</rp></ruby>し  ⇌  small quantity; little; few</li><li><ruby>安<rp>（</rp><rt>やす</rt><rp>）</rp></ruby>い  ⇌  cheap; calm; peaceful; quiet</li><li><ruby>画家<rp>（</rp><rt>がか</rt><rp>）</rp></ruby>  ⇌  painter; artist</li><li><ruby>一番<rp>（</rp><rt>いちばん</rt><rp>）</rp></ruby>  ⇌  best; most; number one</li><li><ruby>有名<rp>（</rp><rt>ゆうめい</rt><rp>）</rp></ruby>  ⇌  famous</li><li><ruby>楽<rp>（</rp><rt>たの</rt><rp>）</rp></ruby>しい  ⇌  enjoyable; fun</li></ol>
