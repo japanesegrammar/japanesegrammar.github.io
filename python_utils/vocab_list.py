@@ -89,6 +89,15 @@ _KNOWN_VOCAB_LIST = [Vocab('勉強', 'study'),
                      Vocab('楽しい', 'enjoyable; fun'),
                      Vocab('薬', 'medicine'),
                      Vocab('飲む', 'to drink'),
+                     Vocab('音楽', 'music'),
+                     Vocab('聞く', 'to hear; to listen (music)'),
+                     Vocab('日本語', 'Japanese (language)​'),
+                     Vocab('歌', 'song'),
+                     Vocab('歌う', 'to sing'),
+                     Vocab('洗濯', 'washing; laundry'),
+                     Vocab('アルバイト', 'part-time job; side job', isItKanji=False),
+                     Vocab('学校', 'school​'),
+                     Vocab('大変', 'difficult; terrible; immense; greatly; terribly'),
                      ]
 
 
