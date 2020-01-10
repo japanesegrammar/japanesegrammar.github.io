@@ -22,7 +22,8 @@ def _getFromPair(pair):
 
 
 def _removeCommonHiraganaIfExist(japaneseText: str, hiragana: str) -> Tuple[str, str, str]:
-    charList = list(set(japaneseText).intersection(hiragana))
+    # the following line does same as set function. but set can sometimes change order so don't use set
+    charList = seq(collections.OrderedDict.fromkeys(x for x in japaneseText if x in hiragana)).map(lambda x: x[0]).to_list()
     reminderHiragana = ''.join(charList)
     if len(charList) > 0:
         a = collections.OrderedDict.fromkeys(japaneseText)
