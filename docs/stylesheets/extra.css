@@ -54,3 +54,41 @@ border: 1px solid #000;
 border-radius: 5px;
 -moz-border-radius: 15px;
 }
+
+.brace{
+  position: relative;
+  background: blue;
+  height: 60px;
+}
+
+.brace div{
+/*   position: absolute; */
+  left: 0;
+  top: 0;
+  transform: rotate(90deg);
+  font-size: 120px;
+}
+
+#flowChart{
+  display: flex;
+  flex-direction: row;
+}
+
+#flowChart .step{
+  border: 2px solid rgb(127, 0, 0);
+  border: 2px solid rgba(255, 0, 0, .5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#flowChart .nostep{
+  align-self: center;
+  padding: 0px;
+  background: rgba(155, 0, 0, .1);;
+  margin: 0px;
+}
+
+#flowChart .arrow{
+  align-self: center;
+  font-size: 30px;
+}

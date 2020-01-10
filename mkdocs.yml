@@ -13,10 +13,11 @@ markdown_extensions:
 
 nav:
 - Home: 'index.md'
-- 'V て-form' : 'te_form.md'
-- 'V て-form + いただけませんか' : 'v_te-form_+_itadakemasenka.md'
-- 'V て-form + います' : 'v_te-form_iru.md'
-- 'V て-form + おきます' : 'v_te-form_okimasu.md'
+- 'V て-form' :
+  - 'V て-form Verb Conjugation Rule' : 'te_form.md'
+  - 'V て-form + いただけませんか' : 'v_te-form_+_itadakemasenka.md'
+  - 'V て-form + います' : 'v_te-form_iru.md'
+  - 'V て-form + おきます' : 'v_te-form_okimasu.md'
 - 'Volitional Form' :
     - 'Volitional Form' : 'volitional_form.md'
     - 'Volitional Form + Question particle か': 'volitional_form_+_question_particle_ka.md'

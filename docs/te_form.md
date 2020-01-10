@@ -1,5 +1,5 @@
 
-## Verb Te Form Conjugation Rules 
+## Verb て-Form (Te-Form) 
 Te-forms are a very important part of Japanese grammar. You can use in the following forms.
  
 - [V て-form + いただけませんか](v_te-form_+_itadakemasenka.md)
@@ -7,10 +7,68 @@ Te-forms are a very important part of Japanese grammar. You can use in the follo
 - [V て-form + おきます](v_te-form_okimasu.md)
 
 ## Rule 1 
-<br>For u-verbs: Replace the u-vowel sound with the お equivalent and attach う<div class="grid-container"><div class="grid-item">  </div><div class="grid-item">  </div></div><b>Example A</b><br><ruby>泳<rp>（</rp><rt>およ</rt><rp>）</rp></ruby>ぐ ---`[replace u-vowel with the お equivalent]`--> <ruby>泳<rp>（</rp><rt>およ</rt><rp>）</rp></ruby>ご ---`[attach う]`---> <ruby>泳<rp>（</rp><rt>およ</rt><rp>）</rp></ruby>ごう<div class="grid-container"><div class="grid-item"> <li> <ruby>夏<rp>（</rp><rt>なつ</rt><rp>）</rp></ruby>は<ruby>川<rp>（</rp><rt>かわ</rt><rp>）</rp></ruby>で<mark class="light_green"><ruby>泳<rp>（</rp><rt>およ</rt><rp>）</rp></ruby>ごう</mark>。 </li> </div><div class="grid-item"> Let's swim in the river in summer. </div></div><br><b>Example B</b><br><ruby>待<rp>（</rp><rt>ま</rt><rp>）</rp></ruby>つ ---`[replace u-vowel with the お equivalent]`--> <ruby>待<rp>（</rp><rt>ま</rt><rp>）</rp></ruby>と ---`[attach う]`---> <ruby>待<rp>（</rp><rt>ま</rt><rp>）</rp></ruby>とう<br><div class="grid-container"><div class="grid-item"> <li> <ruby>雨<rp>（</rp><rt>あめ</rt><rp>）</rp></ruby>が やむまで <mark class="light_green"><ruby>待<rp>（</rp><rt>ま</rt><rp>）</rp></ruby>とう</mark>。 </li> </div><div class="grid-item"> Let's wait until the rain stops. </div></div><br>
+For ru-verbs: Replace る with て
+ 
+| Dictionary Form| Replacing Method| て-Form
+--- |--- |--- |
+<ruby>食<rp>（</rp><rt>た</rt><rp>）</rp></ruby>べる |Replace る with て |<ruby>食<rp>（</rp><rt>た</rt><rp>）</rp></ruby>べて |
+
+
 ## Rule 2 
-<br>For ru-verbs: Replace る with よう<div class="grid-container"><div class="grid-item">  </div><div class="grid-item">  </div></div><b>Example A</b><br><ruby>食<rp>（</rp><rt>た</rt><rp>）</rp></ruby>べる ---`[replace る with よう]`--> <ruby>食<rp>（</rp><rt>た</rt><rp>）</rp></ruby>べよう<div class="grid-container"><div class="grid-item"> <li> ご<ruby>飯<rp>（</rp><rt>はん</rt><rp>）</rp></ruby>を <mark class="light_green"><ruby>食<rp>（</rp><rt>た</rt><rp>）</rp></ruby>べよう</mark>。 </li> </div><div class="grid-item"> Let's eat rice. </div></div><br><b>Example B</b><br><ruby>寝<rp>（</rp><rt>ね</rt><rp>）</rp></ruby>る ---`[replace る with よう]`--> <ruby>寝<rp>（</rp><rt>ね</rt><rp>）</rp></ruby>よう<br><div class="grid-container"><div class="grid-item"> <li> <ruby>今夜<rp>（</rp><rt>こんや</rt><rp>）</rp></ruby>は<ruby>早<rp>（</rp><rt>はや</rt><rp>）</rp></ruby>く<mark class="light_green"><ruby>寝<rp>（</rp><rt>ね</rt><rp>）</rp></ruby>よう</mark>。 </li> </div><div class="grid-item"> Let's sleep early tonight. </div></div><br>
+For u-verbs: we have 5 subs categories.
+### u-verbs with final う, つ and る 
+For u-verbs ending with う, つ and る, we should replace with って.
+ 
+| Dictionary Form| Replacing Method| て-Form
+--- |--- |--- |
+<ruby>会<rp>（</rp><rt>あ</rt><rp>）</rp></ruby>う |Replace う with って |<ruby>会<rp>（</rp><rt>あ</rt><rp>）</rp></ruby>って |
+<ruby>待<rp>（</rp><rt>ま</rt><rp>）</rp></ruby>つ |Replace つ with って |<ruby>待<rp>（</rp><rt>ま</rt><rp>）</rp></ruby>って |
+とる |Replace る with って |とって |
+
+
+### u-verbs with final む, ぶ and ぬ 
+For u-verbs ending with む, ぶ and ぬ, we should replace with んで.
+ 
+| Dictionary Form| Replacing Method| て-Form
+--- |--- |--- |
+<ruby>読<rp>（</rp><rt>よ</rt><rp>）</rp></ruby>む |Replace む with んで |<ruby>読<rp>（</rp><rt>よ</rt><rp>）</rp></ruby>んで |
+<ruby>遊<rp>（</rp><rt>あそ</rt><rp>）</rp></ruby>ぶ |Replace ぶ with んで |<ruby>遊<rp>（</rp><rt>あそ</rt><rp>）</rp></ruby>んで |
+<ruby>死<rp>（</rp><rt>し</rt><rp>）</rp></ruby>ぬ |Replace ぬ with んで |<ruby>死<rp>（</rp><rt>し</rt><rp>）</rp></ruby>んで |
+
+
+
+### u-verbs with final く 
+For u-verbs ending with く, we should replace with いて.
+ 
+| Dictionary Form| Replacing Method| て-Form
+--- |--- |--- |
+<ruby>書<rp>（</rp><rt>か</rt><rp>）</rp></ruby>く |Replace く with いて |<ruby>書<rp>（</rp><rt>か</rt><rp>）</rp></ruby>いて |
+
+
+
+!!! info 
+ 	 There is exception in this class. The て-form of <ruby>行<rp>（</rp><rt>い</rt><rp>）</rp></ruby>くis <ruby>行<rp>（</rp><rt>い</rt><rp>）</rp></ruby>って.
+### u-verbs with final ぐ 
+For u-verbs ending with ぐ, we should replace with いで.
+ 
+| Dictionary Form| Replacing Method| て-Form
+--- |--- |--- |
+<ruby>泳<rp>（</rp><rt>およ</rt><rp>）</rp></ruby>ぐ |Replace ぐ with いで |<ruby>泳<rp>（</rp><rt>およ</rt><rp>）</rp></ruby>いで |
+
+
+### u-verbs with final す 
+For u-verbs ending with す, we should replace with して.
+ 
+| Dictionary Form| Replacing Method| て-Form
+--- |--- |--- |
+<ruby>話<rp>（</rp><rt>はな</rt><rp>）</rp></ruby>す |Replace す with して |<ruby>話<rp>（</rp><rt>はな</rt><rp>）</rp></ruby>して |
+
+
 ## Rule 3 
-<br>For exceptions: する becomes しよう and くる becomes こよう<div class="grid-container"><div class="grid-item">  </div><div class="grid-item">  </div></div><b>Example A</b><br><ruby>卒業<rp>（</rp><rt>そつぎょう</rt><rp>）</rp></ruby>する ---`[replace する with しよう]`--> <ruby>卒業<rp>（</rp><rt>そつぎょう</rt><rp>）</rp></ruby>しよう<br><div class="grid-container"><div class="grid-item"> <li> <ruby>一緒<rp>（</rp><rt>いっしょ</rt><rp>）</rp></ruby>に<mark class="light_green"><ruby>卒業<rp>（</rp><rt>そつぎょう</rt><rp>）</rp></ruby>しよう</mark>ね。 </li> </div><div class="grid-item"> Let's graduate together. </div></div><br><b>Example B</b><br><ruby>来<rp>（</rp><rt>く</rt><rp>）</rp></ruby>る ---`[くる becomes こよう]`--> <ruby>来<rp>（</rp><rt>こ</rt><rp>）</rp></ruby>よう<div class="grid-container"><div class="grid-item"> <li> <ruby>二年後<rp>（</rp><rt>にねんご、</rt><rp>）</rp></ruby>また<mark class="light_green"><ruby>来<rp>（</rp><rt>こ</rt><rp>）</rp></ruby>よう</mark>。 </li> </div><div class="grid-item"> Let's come again two years later. </div></div><br>
-##Vocabulary
-<ol><li><ruby>雨<rp>（</rp><rt>あめ</rt><rp>）</rp></ruby>  ⇌  rain</li><li><ruby>夏<rp>（</rp><rt>なつ</rt><rp>）</rp></ruby>  ⇌  summer</li><li><ruby>川<rp>（</rp><rt>かわ</rt><rp>）</rp></ruby>  ⇌  river, stream</li><li><ruby>泳<rp>（</rp><rt>およ</rt><rp>）</rp></ruby>ぐ  ⇌  to swim</li><li><ruby>待<rp>（</rp><rt>ま</rt><rp>）</rp></ruby>つ  ⇌  to wait</li><li>ご<ruby>飯<rp>（</rp><rt>はん</rt><rp>）</rp></ruby>  ⇌  cooked rice; meal</li><li><ruby>食<rp>（</rp><rt>た</rt><rp>）</rp></ruby>べる  ⇌  to eat</li><li><ruby>今夜<rp>（</rp><rt>こんや</rt><rp>）</rp></ruby>  ⇌  this evening; tonight</li><li><ruby>早<rp>（</rp><rt>はや</rt><rp>）</rp></ruby>く  ⇌  early; soon; quickly; swiftly</li><li><ruby>寝<rp>（</rp><rt>ね</rt><rp>）</rp></ruby>る  ⇌  to sleep, to lie down</li><li><ruby>一緒<rp>（</rp><rt>いっしょ</rt><rp>）</rp></ruby>に  ⇌  together</li><li><ruby>卒業<rp>（</rp><rt>そつぎょう</rt><rp>）</rp></ruby>  ⇌  graduation; completion (e.g. of a course)​</li><li><ruby>年後<rp>（</rp><rt>ねんご</rt><rp>）</rp></ruby>  ⇌  years later</li><li><ruby>来<rp>（</rp><rt>く</rt><rp>）</rp></ruby>る  ⇌  to come back; to become</li></ol>
+For irregular verbs する and くる, we should replace as the following
+ 
+| Dictionary Form| て-Form
+--- |--- |
+する |して |
+くる |きて |
+

@@ -28,3 +28,13 @@ def getFlowChart(diagrams: List[str], inBetweenText: List[str]):
 
 
 getFlowChart(["test", "test2", "test3"], ["pp", "gg"])
+
+
+def getCssFlowChartWithTwoBlock(firstKanjiHtml: str, conversion: str, secondKanji: str):
+    t1 = '<div id="flowChart">'
+    t2 = f'<div class="step">{firstKanjiHtml}</div>'
+    t3 = '<div class="arrow">&rarr;</div>'
+    t4 = f'<div class="nostep"   style="display: inline-block; white-space: nowrap;">{conversion}</div>'
+    t5 = f'<div class="step">{secondKanji}</div>'
+    t6 = '</div>'
+    return t1 + t2 + t3 + t4 + t3 + t5 + t6

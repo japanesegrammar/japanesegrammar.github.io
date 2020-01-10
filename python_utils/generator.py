@@ -11,6 +11,10 @@ def printTitle(text: str):
     return f'\n## {text} \n'
 
 
+def printSecondaryTitle(text: str):
+    return f'\n### {text} \n'
+
+
 def generateCard(text: str, pairs: List[Tuple[str, str]], useLeft: bool = False):
     '<div class="card">   <span><mark class="light_green">V て-form</mark> + <mark class="light_pink">いただけませんか</mark></span></div>'
 

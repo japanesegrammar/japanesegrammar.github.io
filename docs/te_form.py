@@ -1,109 +1,72 @@
-from python_utils.generator import printTitle, generateCard, writeNewLine, generate
+from python_utils.generator import printTitle, printSecondaryTitle, getInfoBlock
 from python_utils.html_generator import getHtmlString
-from python_utils.model import TextPair, HighlightText, Color, ForceReplace
-from python_utils.vocab_list import generateVocabLines
+from python_utils.table_generator import generateTable
 
 with open('te_form.md', 'w', encoding="utf-8") as f:
-    f.write(printTitle('Verb Te Form Conjugation Rules'))
+    f.write(printTitle('Verb て-Form (Te-Form)'))
     f.write('Te-forms are a very important part of Japanese grammar. You can use in the following forms.\n \n')
     f.write('- [V て-form + いただけませんか](v_te-form_+_itadakemasenka.md)\n')
     f.write('- [V て-form + います](v_te-form_iru.md)\n')
     f.write('- [V て-form + おきます](v_te-form_okimasu.md)\n')
 
-    cardText = '<b>Rule 1:</b> For u-verbs: Replace the u-vowel sound with the お equivalent and attach う' + '\n' + '\n'
-               # '<b>Rule 2:</b> For ru-verbs: Replace る with よう' + '\n' + '\n' + \
-               # '<b>Rule 3:</b> For exceptions: する becomes しよう and くる becomes こよう'
-
-    f.write(generateCard(cardText, [], useLeft=True))
-
     f.write((printTitle('Rule 1')))
-    writeNewLine(f)
-    f.write('For u-verbs: Replace the u-vowel sound with the お equivalent and attach う')
+    f.write('For ru-verbs: Replace る with て')
+    table = generateTable(['Dictionary Form', 'Replacing Method', 'て-Form'],
+                          [[getHtmlString("食べる"), 'Replace る with て', getHtmlString("食べて")],
+                           ])
 
-    # we need to add this dummy. otherwise, there is brake line between explanation and example sentence
-    l1 = TextPair('', '', [], )
-    f.write(generate([l1]))
-
-    f.write('<b>Example A</b>')
-    f.write('<br>')
-    oyogu = getHtmlString('泳ぐ')
-    oyogo = getHtmlString('泳ご')
-    oyogou = getHtmlString('泳ごう')
-    f.write(f'{oyogu} ---`[replace u-vowel with the お equivalent]`--> {oyogo} ---`[attach う]`---> {oyogou}')
-    # 夏は川で泳ごう
-    # この夏は たくさん 泳ごうと 思います
-    l1 = TextPair('夏は川で泳ごう。', "Let's swim in the river in summer.", [HighlightText('泳ごう', Color.LIGHT_GREEN)], addBullet=True)
-    f.write(generate([l1]))
-    writeNewLine(f)
-    f.write('<b>Example B</b>')
-    f.write('<br>')
-    matsu = getHtmlString('待つ')
-    mato = getHtmlString('待と')
-    matou = getHtmlString('待とう')
-    f.write(f'{matsu} ---`[replace u-vowel with the お equivalent]`--> {mato} ---`[attach う]`---> {matou}')
-    f.write('<br>')
-    l1 = TextPair('雨が やむまで 待とう。', "Let's wait until the rain stops.", [HighlightText('待とう', Color.LIGHT_GREEN)], addBullet=True)
-    f.write(generate([l1]))
-    writeNewLine(f)
+    f.write(table)
 
     f.write((printTitle('Rule 2')))
-    writeNewLine(f)
-    f.write('For ru-verbs: Replace る with よう')
+    f.write('For u-verbs: we have 5 subs categories.')
+    f.write(printSecondaryTitle('u-verbs with final う, つ and る'))
+    f.write('For u-verbs ending with う, つ and る, we should replace with って.')
+    table = generateTable(['Dictionary Form', 'Replacing Method', 'て-Form'],
+                          [[getHtmlString("会う"), 'Replace う with って', getHtmlString("会って")],
+                           [getHtmlString("待つ"), 'Replace つ with って', getHtmlString("待って")],
+                           [getHtmlString("とる"), 'Replace る with って', getHtmlString("とって")]
+                           ])
+    f.write(table)
 
-    # we need to add this dummy. otherwise, there is brake line between explanation and example sentence
-    l1 = TextPair('', '', [], )
-    f.write(generate([l1]))
+    f.write(printSecondaryTitle('u-verbs with final む, ぶ and ぬ'))
+    f.write('For u-verbs ending with む, ぶ and ぬ, we should replace with んで.')
+    table = generateTable(['Dictionary Form', 'Replacing Method', 'て-Form'],
+                          [[getHtmlString("読む"), 'Replace む with んで', getHtmlString("読んで")],
+                           [getHtmlString("遊ぶ"), 'Replace ぶ with んで', getHtmlString("遊んで")],
+                           [getHtmlString("死ぬ"), 'Replace ぬ with んで', getHtmlString("死んで")]
+                           ])
+    f.write(table)
+    f.write('\n')
 
-    f.write('<b>Example A</b>')
-    f.write('<br>')
-    oyogu = getHtmlString('食べる')
-    oyogo = getHtmlString('食べよう')
+    f.write(printSecondaryTitle('u-verbs with final く'))
+    f.write('For u-verbs ending with く, we should replace with いて.')
+    table = generateTable(['Dictionary Form', 'Replacing Method', 'て-Form'],
+                          [[getHtmlString("書く"), 'Replace く with いて', getHtmlString("書いて")],
+                           ])
+    f.write(table)
+    f.write('\n')
+    f.write(getInfoBlock('There is exception in this class. The て-form of ' + getHtmlString("行く") + f'is {getHtmlString("行って")}.'))
 
-    f.write(f'{oyogu} ---`[replace る with よう]`--> {oyogo}')
+    f.write(printSecondaryTitle('u-verbs with final ぐ'))
+    f.write('For u-verbs ending with ぐ, we should replace with いで.')
+    table = generateTable(['Dictionary Form', 'Replacing Method', 'て-Form'],
+                          [[getHtmlString("泳ぐ"), 'Replace ぐ with いで', getHtmlString("泳いで")],
+                           ])
+    f.write(table)
 
-    l1 = TextPair('ご飯を 食べよう。', "Let's eat rice.", [HighlightText('食べよう', Color.LIGHT_GREEN)], addBullet=True, forceReplaceList=[ForceReplace('飯', "はん")])
-    f.write(generate([l1]))
-    writeNewLine(f)
-
-    f.write('<b>Example B</b>')
-    f.write('<br>')
-    matsu = getHtmlString('寝る')
-    mato = getHtmlString('寝よう')
-    f.write(f'{matsu} ---`[replace る with よう]`--> {mato}')
-    f.write('<br>')
-    l1 = TextPair('今夜は早く寝よう。', "Let's sleep early tonight.", [HighlightText('寝よう', Color.LIGHT_GREEN)], addBullet=True)
-    f.write(generate([l1]))
-    writeNewLine(f)
+    f.write(printSecondaryTitle('u-verbs with final す'))
+    f.write('For u-verbs ending with す, we should replace with して.')
+    table = generateTable(['Dictionary Form', 'Replacing Method', 'て-Form'],
+                          [[getHtmlString("話す"), 'Replace す with して', getHtmlString("話して")],
+                           ])
+    f.write(table)
 
     f.write((printTitle('Rule 3')))
-    writeNewLine(f)
-    f.write('For exceptions: する becomes しよう and くる becomes こよう')
+    f.write('For irregular verbs する and くる, we should replace as the following')
 
-    # we need to add this dummy. otherwise, there is brake line between explanation and example sentence
-    l1 = TextPair('', '', [], )
-    f.write(generate([l1]))
+    table = generateTable(['Dictionary Form', 'て-Form'],
+                          [[getHtmlString("する"), getHtmlString("して")],
+                           [getHtmlString("くる"), getHtmlString("きて")],
+                           ])
 
-    f.write('<b>Example A</b>')
-    f.write('<br>')
-    matsu = getHtmlString(' 卒業する')
-    mato = getHtmlString('卒業しよう')
-    f.write(f'{matsu} ---`[replace する with しよう]`--> {mato}')
-    f.write('<br>')
-    l1 = TextPair('一緒に卒業しようね。', "Let's graduate together.", [HighlightText('卒業しよう', Color.LIGHT_GREEN)], addBullet=True)
-    f.write(generate([l1]))
-    writeNewLine(f)
-
-    f.write('<b>Example B</b>')
-    f.write('<br>')
-    oyogu = getHtmlString('来る')
-    oyogo = getHtmlString('来よう')
-
-    f.write(f'{oyogu} ---`[くる becomes こよう]`--> {oyogo}')
-
-    l1 = TextPair('二年後、また来よう。', "Let's come again two years later.", [HighlightText('来よう', Color.LIGHT_GREEN)], addBullet=True)
-    f.write(generate([l1]))
-    writeNewLine(f)
-
-    vocabListInThisPage = ['夏', '川', '泳ぐ', '雨', '待つ', 'ご飯', '食べる', '今夜', '早く', '寝る', '一緒に', '卒業', '年後', '来る']
-    vocabLines = generateVocabLines(vocabListInThisPage)
-    f.write(vocabLines)
+    f.write(table)
