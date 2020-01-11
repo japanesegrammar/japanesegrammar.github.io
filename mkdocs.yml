@@ -11,6 +11,10 @@ extra_css:
 markdown_extensions:
   - admonition
 
+google_analytics:
+  - 'UA-75503106-4'
+  - 'auto'
+
 nav:
 - Home: 'index.md'
 - 'V て-form' :
