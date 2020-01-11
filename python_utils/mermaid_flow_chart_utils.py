@@ -31,10 +31,24 @@ getFlowChart(["test", "test2", "test3"], ["pp", "gg"])
 
 
 def getCssFlowChartWithTwoBlock(firstKanjiHtml: str, conversion: str, secondKanji: str):
+    dash = '<div class="arrow">&mdash;</div>'
+    arrow = '<div class="arrow">&rarr;</div>'
     t1 = '<div id="flowChart">'
     t2 = f'<div class="step">{firstKanjiHtml}</div>'
-    t3 = '<div class="arrow">&rarr;</div>'
     t4 = f'<div class="nostep"   style="display: inline-block; white-space: nowrap;">{conversion}</div>'
     t5 = f'<div class="step">{secondKanji}</div>'
     t6 = '</div>'
-    return t1 + t2 + t3 + t4 + t3 + t5 + t6
+    return t1 + t2 + dash + t4 + arrow + t5 + t6
+
+
+def getCssFlowChartWithThreeBlock(firstKanjiHtml: str, firstConversion: str, secondKanji: str, secondConversion: str, thirdKanji):
+    dash = '<div class="arrow">&mdash;</div>'
+    arrow = '<div class="arrow">&rarr;</div>'
+    t1 = '<div id="flowChart">'
+    t2 = f'<div class="step">{firstKanjiHtml}</div>'
+    t4 = f'<div class="nostep"   style="display: inline-block; white-space: nowrap;">{firstConversion}</div>'
+    t5 = f'<div class="step">{secondKanji}</div>'
+    t7 = f'<div class="nostep"   style="display: inline-block; white-space: nowrap;">{secondConversion}</div>'
+    t8 = f'<div class="step">{thirdKanji}</div>'
+    t9 = '</div>'
+    return t1 + t2 + dash + t4 + arrow + t5 + dash + t7 + arrow + t8 + t9
