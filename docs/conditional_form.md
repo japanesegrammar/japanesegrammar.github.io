@@ -61,7 +61,7 @@ For な-Adj: Change the last な of the な-adjective and attach なら
 
 
 !!! info 
- 	 Some grammar website shows attaching `であれば` to な-Adj. But `なら` is usually used.
+ 	 You should attach `であれば` to な-Adj when you want to use it for writing report/formal write up because なら form is usually used in conversion.
 ## Rule 6 
 For Noun: Attach なら to the noun
  
@@ -71,4 +71,4 @@ For Noun: Attach なら to the noun
 
 
 !!! info 
- 	 Some grammar website shows attaching `であれば` to Noun. But `なら` is usually used.
+ 	 You should attach `であれば` to Noun when you want to use it for writing report/formal write up because なら form is usually used in conversion.
