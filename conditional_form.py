@@ -64,7 +64,7 @@ with open('conditional_form.md', 'w', encoding="utf-8") as f:
                            ])
     f.write(table)
 
-    f.write(getInfoBlock('Some grammar website shows attaching `であれば` to な-Adj. But `なら` is usually used.'))
+    f.write(getInfoBlock('You should attach `であれば` to な-Adj when you want to use it for writing report/formal write up because なら form is usually used in conversion.'))
 
     f.write((printTitle('Rule 6')))
     f.write('For Noun: Attach なら to the noun')
@@ -73,4 +73,4 @@ with open('conditional_form.md', 'w', encoding="utf-8") as f:
                            ])
     f.write(table)
 
-    f.write(getInfoBlock('Some grammar website shows attaching `であれば` to Noun. But `なら` is usually used.'))
+    f.write(getInfoBlock('You should attach `であれば` to Noun when you want to use it for writing report/formal write up because なら form is usually used in conversion.'))
