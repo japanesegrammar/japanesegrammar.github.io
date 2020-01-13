@@ -43,10 +43,10 @@ with open('conditional_form.md', 'w', encoding="utf-8") as f:
     f.write(table)
 
     f.write((printTitle('Rule 3')))
-    f.write('For exceptions: する becomes すれば and くる becomes くらば')
+    f.write('For exceptions: する becomes すれば and くる becomes くれば')
     table = generateTable(['Dictionary Form', 'Conditional Form'],
                           [[getHtmlString("する"), 'すれば'],
-                           [getHtmlString("くる"), 'くらば'],
+                           [getHtmlString("くる"), 'くれば'],
                            ])
     f.write(table)
 
