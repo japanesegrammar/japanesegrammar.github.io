@@ -98,6 +98,16 @@ _KNOWN_VOCAB_LIST = [Vocab('勉強', 'study'),
                      Vocab('アルバイト', 'part-time job; side job', isItKanji=False),
                      Vocab('学校', 'school​'),
                      Vocab('大変', 'difficult; terrible; immense; greatly; terribly'),
+                     Vocab('押す', 'to push; to press​'),
+                     Vocab('窓', 'window​'),
+                     Vocab('開く', 'to open'),
+                     Vocab('健康', 'health​; health​y'),
+                     Vocab('電話', 'telephone call; phone call​; telephone'),
+                     Vocab('暇', 'spare time; free time '),
+                     Vocab('天気', 'weather'),
+                     Vocab('向こう', 'over there; that way; far away'),
+                     Vocab('島', 'island​'),
+                     Vocab('見える', 'to be seen; to be in sight​'),
                      ]
 
 
@@ -107,7 +117,7 @@ def generateVocabLines(vocabList: List[str]) -> str:
             assert False, f'This vocab is {v} in the list yet.'
 
     filteredList = seq(_KNOWN_VOCAB_LIST).filter(lambda x: x.kanjiOrOther in vocabList).to_list()
-    assert len(filteredList) == len(vocabList)
+    assert len(filteredList) == len(vocabList)  # there will be error if there is duplicated vocab in vocabList
     l1 = f'\n##Vocabulary\n'
     l2 = f'<ol>'
     v = seq(filteredList).map(lambda x: x.getHtmlString).to_list()

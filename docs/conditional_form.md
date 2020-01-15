@@ -36,12 +36,12 @@ For ru-verbs: Replace る with れば
 
 
 ## Rule 3 
-For exceptions: する becomes すれば and くる becomes くらば
+For exceptions: する becomes すれば and くる becomes くれば
  
 | Dictionary Form| Conditional Form
 --- |--- |
 する |すれば |
-くる |くらば |
+くる |くれば |
 
 
 ## Rule 4 
