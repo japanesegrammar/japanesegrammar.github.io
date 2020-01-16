@@ -17,6 +17,9 @@ google_analytics:
 
 nav:
 - Home: 'index.md'
+- 'Past tense form':
+    - 'Past Tense Verb Conjugation Rules' : 'past_tense_form.md'
+
 - 'V て-form' :
   - 'V て-form Verb Conjugation Rules' : 'te_form.md'
   - 'V て-form + いただけませんか' : 'v_te-form_+_itadakemasenka.md'
