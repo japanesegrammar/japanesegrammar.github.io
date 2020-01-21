@@ -108,6 +108,14 @@ _KNOWN_VOCAB_LIST = [Vocab('勉強', 'study'),
                      Vocab('向こう', 'over there; that way; far away'),
                      Vocab('島', 'island​'),
                      Vocab('見える', 'to be seen; to be in sight​'),
+                     Vocab('東京', 'Tokyo​'),
+                     Vocab('連絡', 'to contact; to get in touch'),
+                     Vocab('練習', 'to practice'),
+                     Vocab('日本人', 'Japanese person; Japanese people'),
+                     Vocab('言葉', 'language; dialect​; words; speech'),
+                     Vocab('知る', 'to know; to notice; to comprehend'),
+                     Vocab('元気', 'lively; healthy; in good health​'),
+                     Vocab('水泳', 'swimming'),
                      ]
 
 

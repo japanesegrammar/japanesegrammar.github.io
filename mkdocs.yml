@@ -30,9 +30,10 @@ nav:
     - 'Volitional Form + Question particle か': 'volitional_form_+_question_particle_ka.md'
     - 'Volitional Form + と 思っています': 'volitional_form_+_toomotteimasu.md'
 
-- 'Conditional Form':
+- 'Conditionals':
     - 'Conditional Form Conjugation Rules' : 'conditional_form.md'
-    - 'Conditional Form ば (Ba)' : 'conditional_form_ba.md'
+    - 'Conditional - ば (Ba)' : 'conditional_form_ba.md'
+    - 'Conditional - たら (tara)' : 'conditional_tara_form.md'
 - んです:
     - '~んですか': 'ndesu/~ndesuka.md'
     - '~んです': 'ndesu/~ndesu.md'
