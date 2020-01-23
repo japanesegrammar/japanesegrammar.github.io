@@ -131,6 +131,11 @@ _KNOWN_VOCAB_LIST = [Vocab('勉強', 'study'),
                      Vocab('夜', 'evening; night​'),
                      Vocab('町', 'town​'),
                      Vocab('静か', 'quiet'),
+                     Vocab('ブラジル', 'Brazil​'),
+                     Vocab('チリ', 'Chile'),
+                     Vocab('温泉', 'hot spring; onsen'),
+                     Vocab('所', 'place; spot; scene; site'),
+                     Vocab('白馬', 'Hakuba; a village in Japan'),
                      ]
 
 
