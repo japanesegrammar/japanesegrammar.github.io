@@ -12,9 +12,10 @@ with open('conditional_form.md', 'w', encoding="utf-8") as f:
     cardText = '<b>Rule 1:</b> For u-verbs: Replace the u-vowel sound with the え equivalent and attach ば' + '\n' + '\n' + \
                '<b>Rule 2:</b> For ru-verbs: Replace る with れば' + '\n' + '\n' + \
                '<b>Rule 3:</b> For verb exceptions: する becomes すれば and くる becomes くらば' + '\n' + '\n' + \
-               '<b>Rule 4:</b> For い-Adj:  Change the last い of the い-adjective into ければ' + '\n' + '\n' + \
-               '<b>Rule 5:</b> For な-Adj: Change the last な of the な-adjective and attach なら' + '\n' + '\n' + \
-               '<b>Rule 6:</b> For Noun: Attach なら to the noun'
+               '<b>Rule 4:</b> For verbs in negative: drop the final い and add ければ' + '\n' + '\n' + \
+               '<b>Rule 5:</b> For い-Adj:  Change the last い of the い-adjective into ければ' + '\n' + '\n' + \
+               '<b>Rule 6:</b> For な-Adj: Change the last な of the な-adjective and attach なら' + '\n' + '\n' + \
+               '<b>Rule 7:</b> For Noun: Attach なら to the noun'
 
     f.write(generateCard(cardText, [], useLeft=True))
 
@@ -51,13 +52,25 @@ with open('conditional_form.md', 'w', encoding="utf-8") as f:
     f.write(table)
 
     f.write((printTitle('Rule 4')))
+    f.write('For verbs in negative: drop the final い and add ければ')
+    table = generateTable(['Dictionary Form (Negative)', 'Replacing Method', 'Conditional Form'],
+                          [[getHtmlString("食べない"), ' drop the final い and add ければ', getHtmlString("食べなければ")],
+                           [getHtmlString("行かない"), ' drop the final い and add ければ', getHtmlString("行かなければ")],
+                           [getHtmlString("待たない"), ' drop the final い and add ければ', getHtmlString("待たなければ")],
+                           [getHtmlString("買わない"), ' drop the final い and add ければ', getHtmlString("買わなければ")],
+                           [getHtmlString("しない"), ' drop the final い and add ければ', getHtmlString("しなければ")],
+                           [getHtmlString("来ない"), ' drop the final い and add ければ', getHtmlString("来なければ")],
+                           ])
+    f.write(table)
+
+    f.write((printTitle('Rule 5')))
     f.write('For い-Adj:  Change the last い of the い-adjective into ければ')
     table = generateTable(['Dictionary Form', 'Replacing Method', 'Conditional Form'],
                           [[getHtmlString("寒い"), 'replace the last い of the い-adjective into ければ', getHtmlString("寒ければ ")],
                            ])
     f.write(table)
 
-    f.write((printTitle('Rule 5')))
+    f.write((printTitle('Rule 6')))
     f.write('For な-Adj: Change the last な of the な-adjective and attach なら')
     table = generateTable(['Dictionary Form', 'Replacing Method', 'Conditional Form'],
                           [[getHtmlString("元気[な]"), 'replace the last な of the な-adjective and attach なら', getHtmlString("元気なら ")],
@@ -66,7 +79,7 @@ with open('conditional_form.md', 'w', encoding="utf-8") as f:
 
     f.write(getInfoBlock('You should attach `であれば` to な-Adj when you want to use it for writing report/formal write up because なら form is usually used in conversion.'))
 
-    f.write((printTitle('Rule 6')))
+    f.write((printTitle('Rule 7')))
     f.write('For Noun: Attach なら to the noun')
     table = generateTable(['Dictionary Form', 'Replacing Method', 'Conditional Form'],
                           [[getHtmlString("雨"), 'attach なら', getHtmlString("雨なら ")],
